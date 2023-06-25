@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Color-Picker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Picker div -->
+      <div class="color-picker card card-body">
+        <!-- Img div -->
+        <div class="img-box mb-3">
+          <img
+            class="card-img-top img-fluid"
+            src="https://images.unsplash.com/photo-1479030160180-b1860951d696?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxhbnNjYXBlJTIwd2FsbHBhcGVyJTIwNGt8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"
+            alt="img"
+          />
+        </div>
+        <!-- Btn -->
+        <button class="p-3 btn btn-danger text-white" id="btn">
+          Pick-Color
+        </button>
+      </div>
+
+      <h5 class="card card-body text-center mt-4" id="value">Value;</h5>
+    </div>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+  </body>
+</html>

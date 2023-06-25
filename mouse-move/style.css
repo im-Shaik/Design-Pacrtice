@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  /* width: 100vh; */
+  height: 100vh;
+  display: none;
+  align-items: center;
+  font-size: 55px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+
+button {
+  border-radius: 10px;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  padding: 20px 30px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  font-weight: 600;
+}

@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list {
+  border: 5px dashed rgb(146, 146, 146);
+  padding: 50px;
+}
+.list div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.list div span {
+  letter-spacing: 2px;
+  border-radius: 30px;
+  padding: 20px;
+}
+.list div span:first-child {
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.list div span:first-child:hover {
+  background-color: #3333ff;
+}
+.list div span:nth-child(2) {
+  background-color: rgb(104, 46, 241);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.list div span:nth-child(2):hover {
+  background-color: #8b5ef4;
+}
+.list div span:nth-child(3) {
+  background-color: rgb(143, 102, 238);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.list div span:nth-child(3):hover {
+  background-color: #b194f3;
+}
+.list div span:nth-child(4) {
+  background-color: rgb(88, 112, 250);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.list div span:nth-child(4):hover {
+  background-color: #8a9afb;
+}
+.list div span:nth-child(5) {
+  background-color: rgb(50, 11, 142);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.list div span:nth-child(5):hover {
+  background-color: #430fbd;
+}
+.list div span:nth-child(6) {
+  background-color: rgb(153, 124, 223);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.list div span:nth-child(6):hover {
+  background-color: #b9a5e9;
+}
+.list div span:nth-child(7) {
+  background-color: rgb(234, 98, 193);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.list div span:nth-child(7):hover {
+  background-color: #f08fd3;
+}/*# sourceMappingURL=index.css.map */

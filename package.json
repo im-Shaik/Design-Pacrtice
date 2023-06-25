@@ -1,0 +1,19 @@
+{
+  "name": "Design-Pacrtice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass ./animate-dTitle/index.scss ./animate-dTitle/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "react-icons": "^4.10.1"
+  }
+}

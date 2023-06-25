@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  min-width: 1200px;
+}
+
+nav {
+  position: fixed;
+  width: 90%;
+  margin: 0 auto;
+  z-index: 99;
+  left: 5%;
+  top: 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+nav a:hover {
+  color: purple;
+}
+nav .logo {
+  flex-grow: 0.2;
+}
+nav .logo h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+}
+nav .links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  flex-basis: 100px;
+}
+nav .cart {
+  text-align: center;
+  line-height: 50px;
+  border: 5px solid purple;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+nav .cart:hover {
+  background-color: purple;
+}
+nav .cart:hover a i {
+  color: white;
+}
+
+.div-wrapper {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.card-wrapper {
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.card-wrapper .box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-wrapper .box:hover img {
+  transform: scale(1.3);
+}
+.card-wrapper .box .img {
+  width: 50%;
+  overflow: hidden;
+}
+.card-wrapper .box .img img {
+  width: 14rem;
+  height: 11rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s ease;
+}
+.card-wrapper .box-content h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.card-wrapper .box-content p {
+  color: #4e3d3d;
+  margin-bottom: 10px;
+}
+.card-wrapper .box-content button {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  gap: 10px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 30px;
+  background-color: #751bc9;
+  transition: all 0.5s;
+}
+.card-wrapper .box-content button:hover {
+  background-color: #210839;
+}
+
+@media only screen and (max-width: 950px) {
+  .div-wrapper {
+    flex-direction: column;
+  }
+  .div-wrapper .box {
+    gap: 35px;
+  }
+  .div-wrapper .box .img {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .card-wrapper .box {
+    gap: 10px;
+  }
+  .card-wrapper .box img {
+    width: 10rem;
+    height: 10rem;
+    -o-object-position: -50px;
+       object-position: -50px;
+  }
+  .card-wrapper .box .box-content h2 {
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+  .card-wrapper .box .box-content p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .card-wrapper .box .box-content button {
+    font-size: 9px;
+    padding: 5px 15px;
+  }
+  nav .links {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */

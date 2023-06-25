@@ -1,0 +1,26 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  max-width: 400px;
+  margin: 0px auto;
+  padding: 20px;
+}
+.card .btn {
+  border: none;
+  background-color: #ac4b07;
+}
+.card .btn:hover {
+  background-color: #c06000;
+}
+.card .like {
+  color: rgb(50, 49, 49);
+}/*# sourceMappingURL=index.css.map */

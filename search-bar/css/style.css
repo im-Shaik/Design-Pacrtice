@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(60deg, #39f, #1df, #3af);
+}
+* body .searchBox {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  background-color: #fff;
+  transition: 500ms;
+}
+* body .searchBox.active {
+  border-radius: 50px;
+  transition: 500ms;
+  width: 600px;
+}
+* body .searchBox.active .close {
+  scale: 1;
+  transition: 500ms;
+}
+* body .searchBox .search:hover,
+* body .searchBox .close:hover {
+  background-color: rgb(235, 234, 234);
+}
+* body .searchBox .search span,
+* body .searchBox .close span {
+  cursor: pointer;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+* body .searchBox .close {
+  scale: 0;
+}
+* body .searchBox .close .searchInput {
+  border-radius: 0;
+}
+* body .searchInput {
+  position: relative;
+  flex: 1 0 auto;
+  height: 80px;
+}
+* body .searchInput input {
+  padding-left: 20px;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+* body .searchInput input::placeholder {
+  font-size: 20px;
+}
+* body .searchInput input:focus, * body .searchInput input:not(:focus) {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */
