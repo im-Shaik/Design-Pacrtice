@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import ShowCart from "./ShowCart";
-const Header = ({ stuff, stack }) => {
+const Header = ({ stack }) => {
   const handleClick = (e) => {
     e.preventDefault();
     let total = 0;
@@ -14,7 +14,7 @@ const Header = ({ stuff, stack }) => {
     }
     ReactDOM.createRoot(document.querySelector("main")).render(
       <React.StrictMode>
-        <ShowCart total={total} stack={stack} />
+        <ShowCart key={stack.id} total={total} stack={stack} />
       </React.StrictMode>
     );
   };

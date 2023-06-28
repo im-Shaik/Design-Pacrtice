@@ -1,5 +1,10 @@
 import React from "react";
+import ReactDOM from "react-dom/client";
 import AddSub from "./AddSub";
+import Button from "./Button";
+import Shop from "./Shop";
+import { AiFillShopping } from "react-icons/ai";
+
 const ShowCart = ({ total, stack }) => {
   const handleClick = (e) => {
     e.preventDefault();
@@ -29,6 +34,18 @@ const ShowCart = ({ total, stack }) => {
     ).innerHTML = `$Price : ${total.toFixed(2)}`);
   };
 
+  const byeNow = () => {
+    if (stack.length <= 0) {
+      alert("Stack is empty so first add your cart!....");
+    } else {
+      ReactDOM.createRoot(document.querySelector("main")).render(
+        <React.StrictMode>
+          <Shop stack={stack}></Shop>
+        </React.StrictMode>
+      );
+    }
+  };
+
   return (
     <>
       <div className="back-wrapper">
@@ -52,7 +69,7 @@ const ShowCart = ({ total, stack }) => {
       <div className="show-wrapper">
         {stack.map((item) => {
           return (
-            <div className="card-wrapper">
+            <div key={item.id} className="card-wrapper">
               <div className="box">
                 <div className="img">
                   <img src={item.img} alt="img" />
@@ -73,6 +90,11 @@ const ShowCart = ({ total, stack }) => {
             </div>
           );
         })}
+      </div>
+      <div className="shop-wrapper">
+        <Button byeNow={byeNow} type={"button"} version={"success"}>
+          <AiFillShopping></AiFillShopping> Buy Now
+        </Button>
       </div>
     </>
   );

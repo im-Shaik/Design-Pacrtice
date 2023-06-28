@@ -191,6 +191,32 @@ nav {
   }
 }
 
+// shop-wrapper
+.shop-wrapper {
+  margin-top: 100px;
+  text-align: center;
+  // background-color: red;
+  button {
+    border-radius: 5px !important;
+    outline: 5px solid purple !important;
+    border: 2px solid white !important;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.5s;
+    &:disabled {
+      cursor: not-allowed !important;
+      background-color: #504751 !important;
+    }
+    &:hover {
+      border-radius: 50px !important;
+      gap: 10px !important;
+      background-color: lighten($color: purple, $amount: 10%) !important;
+      outline: 5px solid lighten($color: purple, $amount: 10%) !important;
+      padding: 15px 50px !important;
+    }
+  }
+}
+
 // Media Quires
 
 @media only screen and (max-width: 950px) {

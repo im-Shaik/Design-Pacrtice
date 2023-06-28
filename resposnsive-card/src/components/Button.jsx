@@ -1,38 +1,27 @@
-import React, { useState } from "react";
-import ShowCart from "./ShowCart";
-import App from "../App";
+import React from "react";
 
-const Button = () => {
-  //   let total = 0;
-  //   if (stack.length <= 0) {
-  //     console.log("hello");
-  //   } else {
-  //     stack.map((items) => {
-  //       total += items.price;
-  //     });
-  //   }
-  const [showComponents, setShowComponents] = useState(false);
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    setShowComponents(true);
-    console.log("From button components");
-  };
-
+const Button = ({ children, type, isDisabled, byeNow }) => {
   return (
-    <div className="cart">
-      <a href="#" onClick={handleClick}>
-        <i className="fa-solid fa-cart-shopping"></i>
-      </a>
-      {showComponents && (
-        <main>
-          {/* Components to be shown */}
-          <div className="div-wrapper">
-            <ShowCart />
-          </div>
-        </main>
-      )}
-    </div>
+    <button
+      type={type}
+      disabled={isDisabled}
+      style={{
+        cursor: "pointer",
+        backgroundColor: "purple",
+        outline: "none",
+        display: "inline-flex",
+        gap: "5px",
+        alignItems: "center",
+        border: "none",
+        borderRadius: "15px",
+        color: "white",
+        padding: "15px 20px",
+      }}
+      className={"btn-shop"}
+      onClick={byeNow}
+    >
+      {children}
+    </button>
   );
 };
 
