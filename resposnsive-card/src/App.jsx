@@ -1,11 +1,16 @@
 import React from "react";
+// i use a scss file
 import "./index.scss";
 import Header from "./components/Header";
 import Card from "./components/Card";
 
 const App = () => {
+  /* this is empty for having header cart
+   we click a add to cart while add a stuff to this stack */
   const stack = [];
+
   // collection of stuff
+  // i use unsplash site for image
   const stuff = [
     {
       id: 1,
@@ -84,12 +89,18 @@ const App = () => {
       {/* header */}
       <header>
         <div className="container">
+          {/* this gonna take props a stuff of collection and empty stack */}
           <Header stuff={stuff} stack={stack} />
         </div>
       </header>
       {/* card wrapper */}
       <div className="div-wrapper">
+        {/* this section for showing stuff
+        i use .map function coz having through items */}
         {stuff.map((items) => {
+          // and i through a props this section
+          // .map > items and empty stack
+          // go to card component!
           return <Card key={items.id} items={items} stack={stack} />;
         })}
       </div>

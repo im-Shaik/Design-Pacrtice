@@ -1,11 +1,14 @@
+// import google font
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 
+// root variable
 :root {
   --white: linear-gradient(white, rgb(255, 255, 255));
   --gradient: linear-gradient(to right, #cc315f, #7f006c);
 }
 
+// reset default style
 * {
   margin: 0;
   padding: 0;
@@ -174,6 +177,7 @@ nav {
   }
 }
 
+// shop wrapper
 .show-wrapper {
   display: flex;
   gap: 20px;

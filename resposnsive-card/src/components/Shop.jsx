@@ -1,12 +1,14 @@
 import React from "react";
 
 const Shop = ({ stack }) => {
+  // go back event i using refresh page
   const goBack = (e) => {
     e.preventDefault();
     window.location.reload();
   };
   return (
     <div>
+      {/* this is shop feed  */}
       <div className="card text-bg-success mb-3" style={{ maxWidth: "100%" }}>
         <div className="card-header">Shop</div>
         <div className="card-body">
@@ -15,6 +17,7 @@ const Shop = ({ stack }) => {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
+          {/* this gonna take map for punches items list */}
           {stack.map((item) => {
             return (
               <ul className="list-group list-group">
@@ -26,6 +29,7 @@ const Shop = ({ stack }) => {
           })}
         </div>
       </div>
+      {/* back button here! */}
       <a href="#" onClick={goBack}>
         Go back!
       </a>
